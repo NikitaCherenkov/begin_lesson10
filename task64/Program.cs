@@ -6,9 +6,11 @@ Console.Write($"M = {entry[0]}; N = {entry[1]}. -> ");
 if (entry[0] >= entry[1]) Console.Write(Print(entry[0], entry[1]));
 if (entry[1] > entry[0]) Console.Write(Print(entry[1], entry[0]));
 
-string Print(int max, int min) {
+string Print(int max, int min)
+{
     string output = "«";
-    for (int i = max; i >= min; i--) {
+    for (int i = max; i >= min; i--)
+    {
         output += $"{Convert.ToString(i)}";
         if (i > min) output += ", ";
     }

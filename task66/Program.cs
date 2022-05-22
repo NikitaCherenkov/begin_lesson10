@@ -5,17 +5,20 @@ int[] entry = Console.ReadLine().Split().Select(int.Parse).ToArray();
 Console.Write($"M = {entry[0]}; N = {entry[1]}. -> ");
 Console.Write(Calc(entry[0], entry[1]));
 
-int Calc(int a, int b) {
+int Calc(int a, int b)
+{
     int c = 0;
     int n = 0;
-    if (a > b) {
+    if (a > b)
+    {
         for (int i = b; i <= a; i++)
         {
             c += b + n;
             n++;
         }
         return c;
-    } else
+    }
+    else
     {
         for (int i = a; i <= b; i++)
         {
